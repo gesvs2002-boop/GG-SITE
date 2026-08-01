@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -845,71 +845,9 @@
     font-family:var(--font-display);
     font-size:26px;
     font-weight:600;
-  } * {
+  } * 
 
-}
 
-  /* ============ AJUSTES MOBILE ADICIONAIS (320–430px) ============
-     Correções pontuais de responsividade — não altera nada acima de 720px. */
-  @media (max-width:600px){
-    /* Portfólio: a regra de 980px deixa 2 colunas, o que não existia
-       override para telas de celular — força 1 coluna para não
-       espremer os cards. */
-    .portfolio-grid{grid-template-columns:1fr;}
-    /* Evita que a tag do projeto (texto longo, sem quebra) seja
-       cortada pelo overflow:hidden do card. */
-    .project-body{flex-direction:column;align-items:flex-start;gap:10px;}
-    .project-tag{white-space:normal;}
-  }
-
-  @media (max-width:480px){
-    /* Botões com textos longos ("Solicitar diagnóstico gratuito",
-       "Falar com especialista") estouravam a largura da tela porque
-       usavam white-space:nowrap. Agora quebram em até 2 linhas. */
-    .btn{white-space:normal;text-align:center;line-height:1.25;}
-
-    /* Logo um pouco menor no header para não brigar com o botão de menu. */
-    .logo{font-size:16px;gap:8px;}
-    .logo img{width:32px;height:32px;}
-
-    /* Título do hero mais equilibrado em telas de 320–430px. */
-    .hero h1{font-size:clamp(27px,8.5vw,34px);}
-    .hero-sub{font-size:15.5px;}
-    .hero-trust{gap:16px;}
-
-    /* Painel do dashboard: reduz respiro interno e fontes para caber
-       sem espremer números/rótulos. */
-    .panel{padding:16px;}
-    .panel-metrics{gap:8px;}
-    .metric-card{padding:10px 8px 9px;}
-    .metric-card .label{font-size:9px;}
-    .metric-card .value{font-size:16px;}
-    .metric-card .delta{font-size:9.5px;}
-    .chart-box{padding:12px 12px 6px;}
-
-    /* Etapas do pipeline (Diagnóstico/Estratégia/Execução/Crescimento)
-       não cabiam lado a lado em 4 colunas — agora formam um grid 2x2. */
-    .pipeline-row{flex-wrap:wrap;gap:6px;}
-    .pipeline-chip{flex:1 1 calc(50% - 6px);font-size:9.5px;padding:7px 6px;word-break:break-word;}
-
-    /* Selinhos flutuantes do painel: offsets negativos menores para
-       não saírem da área visível da tela. */
-    .panel-float{font-size:10px;padding:8px 10px;}
-    .panel-float.f1{top:-10px;right:-8px;}
-    .panel-float.f2{bottom:8px;left:-10px;}
-
-    /* Números de estatísticas um pouco menores para não apertar
-       dentro das colunas de 2 em telas pequenas. */
-    .stat{padding:20px 16px;}
-    .stat .num{font-size:25px;}
-
-    /* Rodapé em coluna única — em 2 colunas ficava muito apertado
-       em 320–375px. */
-    .footer-grid{grid-template-columns:1fr;gap:28px;}
-
-    .cta-box{padding:40px 18px;}
-    .cta-box h2{font-size:clamp(23px,7.5vw,29px);}
-  }
 </style>
 </head>
 <body>
