@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnóstico Digital GG — Entender primeiro. Evoluir depois.</title>
+  <meta name="description" content="Entenda como seu trabalho ou negócio está sendo encontrado, percebido, escolhido e preparado para continuar evoluindo no digital.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0B0B0F">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="GG Digital — voltar ao site">
+        <img src="../images/logo.png" alt="" onerror="this.style.display='none'">
+        <span>GG <strong>DIGITAL</strong></span>
+      </a>
+      <a class="back-site" href="/">Voltar ao site <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro screen is-active" id="intro" aria-labelledby="intro-title">
+      <div class="orb orb-one" aria-hidden="true"></div>
+      <div class="orb orb-two" aria-hidden="true"></div>
+      <div class="shell intro-grid">
+        <div class="intro-copy">
+          <p class="eyebrow">Diagnóstico Digital GG</p>
+          <h1 id="intro-title">Antes de pensar na solução,<br><span>vamos entender o cenário.</span></h1>
+          <p class="intro-lead">Em poucos minutos, vamos entender como as pessoas chegam até você, o que encontram e o que pode estar dificultando seu próximo passo.</p>
+
+          <div class="intro-actions">
+            <button class="button button-primary" id="startBtn" type="button">Começar diagnóstico <span aria-hidden="true">→</span></button>
+            <div class="intro-meta" aria-label="Informações sobre o diagnóstico">
+              <span>≈ 3 minutos</span>
+              <span>Sem pacote empurrado</span>
+              <span>Resultado inicial imediato</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="principle-card" aria-label="Princípio do Diagnóstico GG">
+          <div class="principle-index">01 / Descobrir</div>
+          <div class="principle-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <blockquote>“Entender primeiro.<br><strong>Evoluir depois.</strong>”</blockquote>
+          <p>A primeira entrega é clareza. As soluções entram depois do diagnóstico.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="diagnostic screen" id="diagnostic" aria-labelledby="questionTitle">
+      <div class="shell diagnostic-shell">
+        <div class="progress-wrap" aria-label="Progresso do diagnóstico">
+          <div class="progress-copy">
+            <span id="progressLabel">Etapa 1 de 10</span>
+            <span id="progressContext">Contexto</span>
+          </div>
+          <div class="progress-track" aria-hidden="true"><span id="progressBar"></span></div>
+        </div>
+
+        <div class="diagnostic-grid">
+          <aside class="axis-rail" aria-label="Mapa de Evolução Digital GG">
+            <p class="rail-kicker">Mapa de Evolução Digital GG</p>
+            <ol>
+              <li data-axis="found"><span>01</span><div><b>Ser encontrado</b></div></li>
+              <li data-axis="perceived"><span>02</span><div><b>Ser percebido</b></div></li>
+              <li data-axis="chosen"><span>03</span><div><b>Ser escolhido</b></div></li>
+              <li data-axis="evolve"><span>04</span><div><b>Continuar evoluindo</b></div></li>
+            </ol>
+            <p class="rail-note">Não buscamos uma resposta “certa”. Queremos entender o momento real do seu negócio.</p>
+          </aside>
+
+          <div class="question-panel">
+            <form id="diagnosticForm" novalidate>
+              <div id="questionMount" aria-live="polite"></div>
+
+              <div class="form-error" id="formError" role="alert" aria-live="assertive"></div>
+
+              <div class="question-actions">
+                <button class="button button-ghost" id="prevBtn" type="button">← Voltar</button>
+                <button class="button button-primary" id="nextBtn" type="button">Continuar <span aria-hidden="true">→</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="result screen" id="result" aria-labelledby="resultTitle">
+      <div class="shell result-shell">
+        <div class="result-heading">
+          <p class="eyebrow">Diagnóstico inicial concluído</p>
+          <h2 id="resultTitle">Seu Mapa de<br><span>Evolução Digital.</span></h2>
+          <p id="resultLead">Agora conseguimos enxergar melhor o momento do seu negócio.</p>
+        </div>
+
+        <div class="result-grid">
+          <div class="map-card">
+            <div class="map-header">
+              <span>Seu cenário digital</span>
+              <span id="resultBusiness">Seu negócio</span>
+            </div>
+            <div id="axisResults" class="axis-results"></div>
+          </div>
+
+          <div class="insight-card">
+            <span class="insight-label">Onde vale olhar primeiro</span>
+            <h3 id="primaryGapTitle">—</h3>
+            <p id="primaryGapText">—</p>
+            <div class="insight-divider"></div>
+            <span class="insight-label">O que isso significa</span>
+            <p id="meaningText">—</p>
+          </div>
+        </div>
+
+        <div class="human-next">
+          <div>
+            <p class="eyebrow eyebrow-light">Próximo passo</p>
+            <h3>O mapa mostra onde olhar.<br><span>A análise humana define o caminho.</span></h3>
+            <p>Se fizer sentido para você, a GG pode olhar esse cenário com mais cuidado e conversar sobre o que realmente vale fazer agora — sem solução pronta e sem pacote empurrado.</p>
+          </div>
+          <div class="next-actions">
+            <a class="button button-light" id="whatsappCta" href="#" target="_blank" rel="noopener">Conversar sobre meu resultado <span aria-hidden="true">↗</span></a>
+            <button class="button button-quiet-light" id="restartBtn" type="button">Refazer diagnóstico</button>
+          </div>
+        </div>
+
+        <p class="result-note">Este é um diagnóstico inicial baseado nas informações fornecidas. Nenhuma solução é recomendada automaticamente antes de uma análise do contexto.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>GG Digital · Parceira humana de evolução digital</span>
+      <span>Porto Velho · RO</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.2/dist/umd/supabase.js"></script>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
