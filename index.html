@@ -16,6 +16,7 @@
   <meta property="og:locale" content="pt_BR">
   <link rel="icon" href="images/logo.png">
   <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="preload" href="images/logo.png" as="image" fetchpriority="high">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -520,7 +521,7 @@
         </div>
 
         <div class="hero-symbol reveal" aria-label="Símbolo oficial da GG Digital">
-          <img src="images/logo.png" alt="" onerror="this.onerror=null;this.src='images/logo.png';">
+          <img src="images/logo.png" alt="" width="390" height="390" fetchpriority="high" decoding="sync" style="width:min(78%,390px);height:auto;max-height:390px;object-fit:contain" onerror="this.onerror=null;this.src='images/logo.png';">
           <span class="hero-symbol-label">conexão · movimento · evolução</span>
         </div>
       </div>
