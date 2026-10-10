@@ -7,7 +7,7 @@
   <meta name="description" content="A GG Digital entende o momento do seu negócio, identifica o que limita sua evolução e constrói as soluções digitais certas para fazê-lo avançar.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0B0B0F">
-  <link rel="canonical" href="https://ggdigital.com.br/">
+  <link rel="canonical" href="https://somosggdigital.com.br/">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="GG Digital">
@@ -472,6 +472,41 @@
       .motion-ready .reveal { opacity: 1; transform: none; }
       .method-rail { --line-progress: 1 !important; }
     }
+
+    /* Produtos GG: apresentação e acesso são caminhos distintos. */
+    section[id], #acessar { scroll-margin-top: 110px; }
+    .nav-links { gap: 18px; }
+    nav { gap: 20px; }
+    .products { background: var(--ink-2); border-block: 1px solid var(--line-dark); }
+    .product-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px; }
+    .product-card { background: var(--ink); border: 1px solid var(--line-dark); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+    .product-preview { display: block; background: var(--paper); border-bottom: 1px solid var(--line-dark); }
+    .product-preview img { width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: top; }
+    .product-copy { padding: 32px; display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
+    .product-kind { color: var(--blue); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+    .product-copy h3 { font-family: Sora,sans-serif; font-size: clamp(23px,3vw,30px); letter-spacing: -.04em; margin: 12px 0; }
+    .product-copy p { color: var(--muted); font-size: 15px; }
+    .product-copy ul { padding-left: 20px; margin: 20px 0; color: var(--paper); font-size: 14px; }
+    .product-copy li + li { margin-top: 8px; }
+    .product-copy .product-condition { font-size: 12px; margin-bottom: 24px; }
+    .product-copy .btn { margin-top: auto; }
+    .system-access { margin-top: 40px; padding: 28px 32px; border: 1px solid var(--line-dark); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .system-access h3 { font-family: Sora,sans-serif; font-size: 20px; }
+    .system-access p { color: var(--muted); font-size: 14px; margin-top: 5px; }
+    .access-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    @media (min-width: 761px) and (max-width: 1100px) {
+      .nav-links { gap: 12px; } nav { gap: 12px; } .nav-links a { font-size: 11px; }
+      .nav-cta { padding-inline: 12px; font-size: 11px; }
+      .brand-text { font-size: 12px; }
+    }
+    @media (max-width: 760px) {
+      .product-grid { grid-template-columns: 1fr; }
+      .product-copy { padding: 24px; }
+      .system-access { align-items: stretch; flex-direction: column; padding: 24px; }
+      .access-links { flex-direction: column; }
+      .product-copy .btn { width: 100%; padding-inline: 12px; }
+    }
+
   </style>
 </head>
 
@@ -487,8 +522,10 @@
         <div class="nav-links">
           <a href="#gg">A GG</a>
           <a href="#solucoes">Soluções</a>
+          <a href="#sistemas">Sistemas GG</a>
           <a href="#metodo">Método</a>
           <a href="#projetos">Projetos</a>
+          <a href="#acessar">Acessar meu sistema</a>
         </div>
 
         <a class="btn btn-primary nav-cta diagnostic-link" href="/diagnostico">Iniciar diagnóstico</a>
@@ -500,8 +537,10 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="#gg">A GG</a>
     <a href="#solucoes">Soluções</a>
+          <a href="#sistemas">Sistemas GG</a>
     <a href="#metodo">Método</a>
     <a href="#projetos">Projetos</a>
+          <a href="#acessar">Acessar meu sistema</a>
     <a class="diagnostic-link" href="/diagnostico">Iniciar diagnóstico</a>
   </div>
   <button class="menu-backdrop" id="menuBackdrop" type="button" aria-label="Fechar menu" tabindex="-1"></button>
@@ -517,7 +556,7 @@
             <a href="/diagnostico" class="btn btn-primary diagnostic-link">Iniciar diagnóstico <span class="arrow">→</span></a>
             <a href="#gg" class="btn btn-quiet">Conhecer a GG</a>
           </div>
-          <p class="hero-note">Sem solução pronta. Sem pacote empurrado. Começamos entendendo.</p>
+          <p class="hero-note">Cada negócio tem seu momento. Indicamos a solução que faz sentido para o seu.</p>
         </div>
 
         <div class="hero-symbol reveal" aria-label="Símbolo oficial da GG Digital">
@@ -604,6 +643,52 @@
               <div class="tags"><span class="tag">Automação</span><span class="tag">IA</span><span class="tag">Sistemas digitais</span><span class="tag">Dados</span></div>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="products section-pad" id="sistemas" aria-labelledby="systems-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Sistemas GG</span>
+          <h2 id="systems-title">Mais organização para a rotina do seu negócio.</h2>
+          <p>Conheça os produtos da GG Digital para cuidar da agenda e acompanhar os atendimentos. Cada um resolve uma necessidade — a gente ajuda você a escolher.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <a class="product-preview" href="https://agenda.somosggdigital.com.br/" aria-label="Ver a apresentação do GG Me Agenda">
+              <img src="images/gg-me-agenda.jpg" alt="Captura da página pública do GG Me Agenda, com apresentação de reservas online" loading="lazy" width="1440" height="900">
+            </a>
+            <div class="product-copy">
+              <span class="product-kind">Agendamentos e reservas</span>
+              <h3>GG Me Agenda</h3>
+              <p>Seu cliente escolhe um horário. Você acompanha a agenda e organiza os serviços, profissionais e recursos do seu negócio.</p>
+              <ul><li>Página pública para reservas online</li><li>Calendário e controle de disponibilidade</li><li>Organização de serviços e acompanhamento financeiro</li></ul>
+              <p class="product-condition">Para profissionais, equipes e negócios que trabalham com horários ou reservas.</p>
+              <a class="btn btn-primary" href="https://agenda.somosggdigital.com.br/">Conhecer o GG Me Agenda <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <a class="product-preview" href="https://gg-atendimentos.vercel.app/" aria-label="Ver a apresentação do GG Atendimentos">
+              <img src="images/gg-atendimentos.jpg" alt="Captura da página pública do GG Atendimentos, com exemplo ilustrativo do fluxo de atendimento" loading="lazy" width="1440" height="900">
+            </a>
+            <div class="product-copy">
+              <span class="product-kind">Atendimento e acompanhamento</span>
+              <h3>GG Atendimentos</h3>
+              <p>Uma visão clara das conversas, dos pedidos e das pendências para sua equipe saber qual é o próximo passo.</p>
+              <ul><li>Fila de atendimento e histórico das conversas</li><li>Respostas configuradas para a sua operação</li><li>Pedidos e comprovantes para conferência da equipe</li></ul>
+              <p class="product-condition">Implantação acompanhada. O WhatsApp depende de conexão e teste da instância da empresa.</p>
+              <a class="btn btn-primary" href="https://gg-atendimentos.vercel.app/">Conhecer o GG Atendimentos <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="system-access" id="acessar" aria-labelledby="access-title">
+          <div><h3 id="access-title">Já usa um sistema GG?</h3><p>Escolha seu produto para acessar sua conta.</p></div>
+          <div class="access-links">
+            <a class="btn btn-quiet" href="https://agenda.somosggdigital.com.br/auth">Entrar no Me Agenda <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-quiet" href="https://gg-atendimentos.vercel.app/app.html">Entrar no Atendimentos <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </div>
     </section>
@@ -733,8 +818,9 @@
           <a class="brand" href="#inicio"><img src="images/logo.png" alt="GG Digital"></a>
           <p>Parceira humana de evolução digital. Entender primeiro. Evoluir depois.</p>
         </div>
-        <div class="footer-col"><h4>GG Digital</h4><a href="#gg">A GG</a><a href="#metodo">Método GG</a><a href="#projetos">Projetos</a></div>
-        <div class="footer-col"><h4>Soluções</h4><a href="#solucoes">Presença & Autoridade</a><a href="#solucoes">Aquisição & Conversão</a><a href="#solucoes">Tecnologia & Evolução</a></div>
+        <div class="footer-col"><h4>GG Digital</h4><a href="#gg">A GG</a><a href="#metodo">Método GG</a><a href="#projetos">Projetos</a>
+          <a href="#acessar">Acessar meu sistema</a></div>
+        <div class="footer-col"><h4>Soluções</h4><a href="#solucoes">Presença & Autoridade</a><a href="#solucoes">Aquisição & Conversão</a><a href="#solucoes">Tecnologia & Evolução</a><a href="https://agenda.somosggdigital.com.br/">GG Me Agenda</a><a href="https://gg-atendimentos.vercel.app/">GG Atendimentos</a></div>
         <div class="footer-col"><h4>Contato</h4><a id="instagram" href="https://instagram.com/gg.ajuda" target="_blank" rel="noopener">Instagram</a><a id="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:gg.digital.comercial@gmail.com">E-mail</a></div>
       </div>
       <div class="footer-bottom"><span>© <span id="year"></span> GG Digital. Todos os direitos reservados.</span><span>Porto Velho · RO</span></div>
